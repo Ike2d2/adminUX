@@ -1,0 +1,38 @@
+$radius: 20px;
+$text-color: #F00;
+$smallFont: 10px;
+$largeFont: 40px;
+$mainFont: 12px;
+$primaryColor: #fcc;
+$secondaryColor: #fff;
+
+body {
+    background-color: $primaryColor;
+    font-size: $mainFont;
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    background-color: $secondaryColor;
+    border-radius: $radius;
+    color: $text-color;
+    border: 1px solid black;
+}
+
+.card {
+    background-color: $primaryColor;
+    font-size: $largeFont;
+    border-radius: $radius;
+    color: $text-color;
+}
+
+.sidebar {
+    background-color: $primaryColor;
+    font-size: $smallFont;
+    border-radius: $radius;
+    color: $text-color;
+}

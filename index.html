@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin UX</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="accent"></div>
+        <div class="sidebar">
+            <div class="logo">
+                <img alt="logo">
+            </div>
+            <div class="pfp">
+                <img alt="pfp">
+            </div>
+            <div class="username">
+                <div class="welcome">
+                    <span>Welcome back,</span>
+                    <span>[User Name]</span>
+                </div>
+            </div>
+            <div class="budget">
+                <span id="budgetAmount">$[Budget]</span>
+                <span>Monthly Budget</span>
+            </div>
+            <div class="navItems">
+                <div class="navItem">
+                    <span class="navIcon">X</span><span>Dashboard</span>
+                </div>
+                <div class="navItem">
+                    <span class="navIcon">X</span><span>Investments</span>
+                </div>
+                <div class="navItem">
+                    <span class="navIcon">X</span><span>Transactions</span>
+                </div>
+                <div class="navItem">
+                    <span class="navIcon">X</span><span>Wallet</span>
+                </div>
+            </div>
+            <div class="exit">
+                <div class="navItem">
+                    <span class="navIcon">X</span><span>Sign-out</span>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard">
+            <h1>Dashboard</h1>
+            <div class="columns">
+                <div class="leftColumn">
+                    <div class="card">
+                        <div class="cardHeader">
+                            <span>Available Balance</span>
+                            <span>Credit</span>
+                            <input type="checkbox" class="toggle">
+                        </div>
+                        <div class="cardBody">
+                            <span>[Balance]</span>
+                        </div>
+                        <div class="cardFooter">
+                            <span>[Card Number]</span>
+                            <img alt="[CARD LOGO]">
+                        </div>
+                    </div>
+                    <div class="limit">
+                        <div class="limitHeader">
+                            <span>[Payment limit]</span>
+                            <span>$ [Amount] / [Limit]</span>
+                            <input type="range">
+                        </div>
+                    </div>
+                    <div class="cashFlow">
+                        <div class="income graph">
+                            <img alt="incomeGraph">
+                            <div class="incomeAmount amount">
+                                <span>Income</span>
+                                <span>[Amount]</span>
+                            </div>
+                        </div>
+                        <div class="spendings graph">
+                            <img alt="spendingsGraph">
+                            <div class="spendingsAmount amount">
+                                <span>Spendings</span>
+                                <span>[Amount]</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest">
+                        <div class="latestHeader">
+                            <span class="sectionHeader">Latest spendings</span>
+                            <span>View all</span>
+                        </div>
+                        <div class="latestContent">
+                            <div class="latestItem">
+                                <div class="latestIcon">
+                                    <span>X</span>
+                                </div>
+                                <div class="latestItemInfo">
+                                    <span>[Store]</span>
+                                    <span>[Date]</span>
+                                </div>
+                                <div class="latestItemAmount">
+                                    <span>- $[Amount]</span>
+                                </div>
+                                <span class="arrow">&gt;</span>
+                            </div>
+                            <div class="latestItem">
+                                <div class="latestIcon">
+                                    <span>X</span>
+                                </div>
+                                <div class="latestItemInfo">
+                                    <span>[Store]</span>
+                                    <span>[Date]</span>
+                                </div>
+                                <div class="latestItemAmount">
+                                    <span>- $[Amount]</span>
+                                </div>
+                                <span class="arrow">&gt;</span>
+                            </div>
+                            <div class="latestItem">
+                                <div class="latestIcon">
+                                    <span>X</span>
+                                </div>
+                                <div class="latestItemInfo">
+                                    <span>[Store]</span>
+                                    <span>[Date]</span>
+                                </div>
+                                <div class="latestItemAmount">
+                                    <span>- $[Amount]</span>
+                                </div>
+                                <span class="arrow">&gt;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightColumn">
+                    <div class="chart">
+                        <div class="chartHeader">
+                            <span class="sectionHeader">[Chart Label]</span>
+                            <select name="dateRange" id="dateRange">
+                                <option value="Day">Day</option>
+                                <option value="Week">Week</option>
+                                <option value="Month">Month</option>
+                                <option value="Year">Year</option>
+                            </select>
+                        </div>
+                        <div class="chartContent">
+                            [Chart]
+                        </div>
+                    </div>
+                    <div class="recipients">
+                        <span class="sectionHeader">Send money to</span>
+                        <span class="arrow">&gt;</span>
+                        <div class="recipientsRow">
+                            <img alt="[FACE]">
+                            <img alt="[FACE]">
+                            <img alt="[FACE]">
+                            <img alt="[FACE]">
+                            <img alt="[FACE]">
+                        </div>
+                    </div>
+                    <div class="payments">
+                        <span class="sectionHeader">Scheduled Payments</span>
+                        <div class="carousel">
+                            <div class="carouselItem">
+                                <span class="rate">[Rate]</span>
+                                <img alt="icon">
+                                <span class="paymentName">[Name]</span>
+                            </div>
+                            <div class="carouselItem">
+                                <span class="rate">[Rate]</span>
+                                <img alt="icon">
+                                <span class="paymentName">[Name]</span>
+                            </div>
+                            <div class="carouselItem">
+                                <span class="rate">[Rate]</span>
+                                <img alt="icon">
+                                <span class="paymentName">[Name]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

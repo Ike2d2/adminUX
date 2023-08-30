@@ -1,0 +1,30 @@
+body {
+  background-color: #fcc;
+  font-size: 12px;
+  color: #F00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  background-color: #fff;
+  border-radius: 20px;
+  color: #F00;
+  border: 1px solid black;
+}
+
+.card {
+  background-color: #fcc;
+  font-size: 40px;
+  border-radius: 20px;
+  color: #F00;
+}
+
+.sidebar {
+  background-color: #fcc;
+  font-size: 10px;
+  border-radius: 20px;
+  color: #F00;
+}/*# sourceMappingURL=styles.css.map */
